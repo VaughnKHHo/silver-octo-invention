@@ -1,0 +1,118 @@
+<div
+  class="h-full w-full max-w-screen-md min-w-[600px]  mx-auto flex flex-col justify-start items-stretch gap-4 p-4 lg:pt-8 lg:pb-16 lg:px-[5%] bg-[#0b0d14] text-xl lg:text-2xl">
+
+  <div class="flex flex-row justify-center sm:justify-between items-start">
+    <div
+      class="hidden sm:flex flex-col justify-center items-center sm:items-start gap-x-2 text-center text-3xl lg:text-4xl">
+      <h6>Stake $VFSN and</h6>
+      <h6 class="text-[#FB9C2D]">Earn More</h6>
+    </div>
+
+    <div
+      class="sm:hidden flex flex-col justify-center items-center sm:items-start gap-x-2 text-center text-3xl lg:text-4xl">
+      <h6>Stake $VFSN</h6>
+      <h6>and</h6>
+      <h6 class="text-[#FB9C2D]">Earn More</h6>
+    </div>
+  </div>
+
+  <div class="flex flex-1 flex-col justify-between items-start gap-y-8 section-container p-4">
+    <div class="flex flex-row justify-start items-center gap-x-4">
+      <div class="block-number">
+        <span>1</span>
+      </div>
+
+      <div class="sm:hidden flex flex-wrap">
+        <h6>
+          Stake <span class="text-[#1A56CB]">$VFSN</span> for 7 to 90 days or more
+        </h6>
+      </div>
+      <div class="hidden sm:flex flex-col">
+        <h6>
+          Stake <span class="text-[#1A56CB]">$VFSN</span> for 7 to 90 days
+        </h6>
+        <h6>
+          or more
+        </h6>
+      </div>
+    </div>
+
+    <div class="flex flex-col">
+      <span class="text-lg text-[#C6C6C6]">Earn and stake your $VFSN to</span>
+      <span class="text-lg text-[#C6C6C6]">compound returns</span>
+    </div>
+
+    <div>
+      <button class="dfus-blue-btn" (click)="stakeVFSN()">
+        Stake <span class="font-semibold">$VFSN</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="flex flex-col justify-start items-start gap-y-4 section-container p-4">
+    <div class="flex flex-row justify-start items-center gap-x-4">
+      <div class="block-number">
+        <span>2</span>
+      </div>
+      <div class="flex flex-wrap">
+        <h6>
+          Staking Rewards
+        </h6>
+      </div>
+    </div>
+
+    <div class="w-full flex flex-col justify-start items-start gap-y-4 md:px-10">
+      <div class="ratio-grid w-full flex flex-col p-4 border rounded-xl text-center text-sm sm:text-base bg-[#2f3238]"
+        [ngStyle]="{'box-shadow': 'inset 0px 1px 20px 0px #474849'}">
+        <div class="flex-1 py-2 md:py-1 text-center font-semibold border border-[#FFFFFF75] rounded-xl">
+          Duration X Multiplier
+        </div>
+
+        <div class="flex flex-row p-2">
+          <div class="s-multiplier flex flex-1 flex-row justify-center gap-x-2">
+            <span class="text-[#C6C6C6]">7 days</span>
+            <img src="icons/arrow_right.svg" alt="Right arrow icon" />
+            <span class="font-bold">1.01 (1%)</span>
+          </div>
+        </div>
+        <div class="divider p-0"></div>
+        <div class="flex flex-row p-2">
+          <div class="s-multiplier flex flex-1 flex-row justify-center gap-x-2">
+            <span class="text-[#C6C6C6]">30 days</span>
+            <img src="icons/arrow_right.svg" alt="Right arrow icon" />
+            <span class="font-bold">1.1 (10%)</span>
+          </div>
+        </div>
+        <div class="divider p-0"></div>
+        <div class="flex flex-row p-2">
+          <div class="s-multiplier flex flex-1 flex-row justify-center gap-x-2">
+            <span class="text-[#C6C6C6]">60 days</span>
+            <img src="icons/arrow_right.svg" alt="Right arrow icon" />
+            <span class="font-bold">1.2 (20%)</span>
+          </div>
+        </div>
+        <div class="divider p-0"></div>
+        <div class="flex flex-row p-2">
+          <div class="s-multiplier flex flex-1 flex-row justify-center gap-x-2">
+            <span class="text-[#C6C6C6]">90 days</span>
+            <img src="icons/arrow_right.svg" alt="Right arrow icon" />
+            <span class="font-bold">1.3 (30%)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-1 flex-col justify-start items-stretch gap-y-4 section-container p-4">
+    <div class="flex flex-row justify-start items-center gap-x-4">
+      <div class="block-number">
+        <span>3</span>
+      </div>
+      <div class="flex flex-wrap">
+        <h6>Grow together with us</h6>
+      </div>
+    </div>
+
+    <img src="img/growth_infographic.svg" alt="Growth graphic" />
+  </div>
+</div>
